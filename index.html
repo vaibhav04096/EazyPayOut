@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EazyPayouts</title>
+    <link rel="stylesheet" href="style.css">  
+  
+</head>
+
+<!-- before starting the page enable the database  [npx json-server Backend/data.json --watch --port 5009]  -->
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="logo">
+                <img src="./utility/logo2.png" alt="Logo">
+                <h1>EazyPayouts</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="#loads">
+                        <span class="icon1">
+                            <svg width="40px" height="76px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.368"></g><g id="SVGRepo_iconCarrier"> <path d="M16 8C15.4477 8 15 8.44772 15 9C15 9.55228 15.4477 10 16 10V8ZM8 10C8.55228 10 9 9.55228 9 9C9 8.44772 8.55228 8 8 8V10ZM5.07805 19.7748L4.61708 20.6622L4.61708 20.6622L5.07805 19.7748ZM4.22517 18.9219L5.11259 18.461L5.11259 18.461L4.22517 18.9219ZM19.7748 18.9219L20.6622 19.3829L19.7748 18.9219ZM18.9219 19.7748L19.3829 20.6622L18.9219 19.7748ZM19.7748 10.0781L20.6622 9.61708L20.6622 9.61708L19.7748 10.0781ZM18.9219 9.22517L18.461 10.1126H18.461L18.9219 9.22517ZM4.22517 10.0781L3.33776 9.61708L4.22517 10.0781ZM5.07805 9.22517L4.61708 8.33776L5.07805 9.22517ZM13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4H13ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM10.2071 10.7929C9.81658 10.4024 9.18342 10.4024 8.79289 10.7929C8.40237 11.1834 8.40237 11.8166 8.79289 12.2071L10.2071 10.7929ZM15.2071 12.2071C15.5976 11.8166 15.5976 11.1834 15.2071 10.7929C14.8166 10.4024 14.1834 10.4024 13.7929 10.7929L15.2071 12.2071ZM19 12.22V16.78H21V12.22H19ZM16.78 19H7.22V21H16.78V19ZM5 16.78V12.22H3V16.78H5ZM16 10H16.78V8H16V10ZM7.22 10H8V8H7.22V10ZM7.22 19C6.63372 19 6.25517 18.9992 5.96722 18.9753C5.69125 18.9524 5.58924 18.9135 5.53903 18.8874L4.61708 20.6622C5.00034 20.8613 5.39982 20.935 5.8017 20.9684C6.19162 21.0008 6.66729 21 7.22 21V19ZM3 16.78C3 17.3327 2.9992 17.8084 3.03158 18.1983C3.06495 18.6002 3.13867 18.9997 3.33776 19.3829L5.11259 18.461C5.0865 18.4108 5.04763 18.3088 5.02472 18.0328C5.0008 17.7448 5 17.3663 5 16.78H3ZM5.53903 18.8874C5.35638 18.7925 5.20746 18.6436 5.11259 18.461L3.33776 19.3829C3.62239 19.9309 4.06915 20.3776 4.61708 20.6622L5.53903 18.8874ZM19 16.78C19 17.3663 18.9992 17.7448 18.9753 18.0328C18.9524 18.3088 18.9135 18.4108 18.8874 18.461L20.6622 19.3829C20.8613 18.9997 20.935 18.6002 20.9684 18.1983C21.0008 17.8084 21 17.3327 21 16.78H19ZM16.78 21C17.3327 21 17.8084 21.0008 18.1983 20.9684C18.6002 20.935 18.9997 20.8613 19.3829 20.6622L18.461 18.8874C18.4108 18.9135 18.3088 18.9524 18.0328 18.9753C17.7448 18.9992 17.3663 19 16.78 19V21ZM18.8874 18.461C18.7925 18.6436 18.6436 18.7925 18.461 18.8874L19.3829 20.6622C19.9309 20.3776 20.3776 19.9309 20.6622 19.3829L18.8874 18.461ZM21 12.22C21 11.6673 21.0008 11.1916 20.9684 10.8017C20.935 10.3998 20.8613 10.0003 20.6622 9.61708L18.8874 10.539C18.9135 10.5892 18.9524 10.6912 18.9753 10.9672C18.9992 11.2552 19 11.6337 19 12.22H21ZM16.78 10C17.3663 10 17.7448 10.0008 18.0328 10.0247C18.3088 10.0476 18.4108 10.0865 18.461 10.1126L19.3829 8.33776C18.9997 8.13867 18.6002 8.06495 18.1983 8.03158C17.8084 7.9992 17.3327 8 16.78 8V10ZM20.6622 9.61708C20.3776 9.06915 19.9309 8.62239 19.3829 8.33776L18.461 10.1126C18.6436 10.2075 18.7925 10.3564 18.8874 10.539L20.6622 9.61708ZM5 12.22C5 11.6337 5.0008 11.2552 5.02472 10.9672C5.04763 10.6912 5.0865 10.5892 5.11259 10.539L3.33776 9.61708C3.13867 10.0003 3.06495 10.3998 3.03158 10.8017C2.9992 11.1916 3 11.6673 3 12.22H5ZM7.22 8C6.66729 8 6.19162 7.9992 5.8017 8.03158C5.39982 8.06495 5.00034 8.13867 4.61708 8.33776L5.53903 10.1126C5.58924 10.0865 5.69125 10.0476 5.96722 10.0247C6.25517 10.0008 6.63372 10 7.22 10V8ZM5.11259 10.539C5.20746 10.3564 5.35638 10.2075 5.53903 10.1126L4.61708 8.33776C4.06915 8.62239 3.62239 9.06915 3.33776 9.61708L5.11259 10.539ZM11 4V14H13V4H11ZM12.7071 13.2929L10.2071 10.7929L8.79289 12.2071L11.2929 14.7071L12.7071 13.2929ZM12.7071 14.7071L15.2071 12.2071L13.7929 10.7929L11.2929 13.2929L12.7071 14.7071Z" fill="#ffffff"></path> </g></svg>
+                        </span><span class="text">Loads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#statements" class="disabled">
+                        <span class="icon2">
+                            <svg fill="#000000" viewBox="0 0 270.92 270.92" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style type="text/css">  .fil0 {fill:black;fill-rule:nonzero}  </style> </defs> <g id="Layer_x0020_1"> <path class="fil0" d="M202.47 214.83c0,8.75 -7.1,15.85 -15.85,15.85l-102.32 0c-8.74,0 -15.85,-7.1 -15.85,-15.85l0 -158.75c0,-8.75 7.11,-15.86 15.85,-15.86l102.32 0c8.75,0 15.85,7.11 15.85,15.86l0 158.75zm-67.01 -23.22l-45.21 0c-1.95,0 -3.53,1.59 -3.53,3.53 0,1.95 1.58,3.53 3.53,3.53l45.21 0c1.95,0 3.52,-1.58 3.52,-3.53 0,-1.94 -1.57,-3.53 -3.52,-3.53zm45.23 -32.01l-90.44 0c-1.95,0 -3.53,1.59 -3.53,3.54 0,1.95 1.58,3.52 3.53,3.52l90.44 0c1.95,0 3.52,-1.57 3.52,-3.52 0,-1.95 -1.57,-3.54 -3.52,-3.54zm0 -29.46l-90.44 0c-1.95,0 -3.53,1.57 -3.53,3.52 0,1.95 1.58,3.53 3.53,3.53l90.44 0c1.95,0 3.52,-1.58 3.52,-3.53 0,-1.95 -1.57,-3.52 -3.52,-3.52zm0 -29.36l-90.44 0c-1.95,0 -3.53,1.58 -3.53,3.53 0,1.95 1.58,3.52 3.53,3.52l90.44 0c1.95,0 3.52,-1.57 3.52,-3.52 0,-1.95 -1.57,-3.53 -3.52,-3.53zm0 -28.24l-90.44 0c-1.95,0 -3.53,1.59 -3.53,3.54 0,1.95 1.58,3.52 3.53,3.52l90.44 0c1.95,0 3.52,-1.57 3.52,-3.52 0,-1.95 -1.57,-3.54 -3.52,-3.54zm5.93 -39.37l-102.32 0c-12.63,0 -22.91,10.27 -22.91,22.91l0 158.75c0,12.65 10.28,22.91 22.91,22.91l102.32 0c12.63,0 22.92,-10.26 22.92,-22.91l0 -158.75c0,-12.64 -10.29,-22.91 -22.92,-22.91z"></path> </g> </g></svg>
+                        </span>
+                        <span class="text">Statements</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#transactions">
+                        <span class="icon3">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(90)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="none" stroke="#000000" stroke-width="2" d="M2,7 L20,7 M16,2 L21,7 L16,12 M22,17 L4,17 M8,12 L3,17 L8,22"></path> </g></svg>
+                        </span>
+                        <span class="text">Transactions</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#logout" class="logout"><svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.651 16.989h17.326c0.553 0 1-0.448 1-1s-0.447-1-1-1h-17.264l3.617-3.617c0.391-0.39 0.391-1.024 0-1.414s-1.024-0.39-1.414 0l-5.907 6.062 5.907 6.063c0.196 0.195 0.451 0.293 0.707 0.293s0.511-0.098 0.707-0.293c0.391-0.39 0.391-1.023 0-1.414zM29.989 0h-17c-1.105 0-2 0.895-2 2v9h2.013v-7.78c0-0.668 0.542-1.21 1.21-1.21h14.523c0.669 0 1.21 0.542 1.21 1.21l0.032 25.572c0 0.668-0.541 1.21-1.21 1.21h-14.553c-0.668 0-1.21-0.542-1.21-1.21v-7.824l-2.013 0.003v9.030c0 1.105 0.895 2 2 2h16.999c1.105 0 2.001-0.895 2.001-2v-28c-0-1.105-0.896-2-2-2z"></path> </g></svg>
+             <span>Logout</span> </a>
+        </div>
+        <div class="main-content">
+            <header>
+                <div class="account-info">
+                    <select id="Company">
+                        <option>Company Name</option>
+                    </select>
+                    <select id="Account">
+                        <option>Account Name</option>
+                    </select>
+                </div>
+            </header>
+            <div class="balance">
+                <div class="svg">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#fd914e" class="bi bi-cash-stack"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path> <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"></path> </g></svg>
+                </div> 
+            
+                <div class="text">
+                    <h2>Available Balance</h2>
+                    <p id="Balance"></p>
+                </div> 
+            </div>
+            <div class="latest-loads">
+                <h3>Latest Loads are displayed here</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Credit</th>
+                            <th>A/c Balance</th>
+                            <th>UTR/RRN</th>
+                            <th>A/c No / UPI</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-body">
+                         
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
